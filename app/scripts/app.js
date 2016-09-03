@@ -21,9 +21,6 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
                 'header@index': {
                     templateUrl: 'views/partials/header.html'
                 },
-                'footer@index': {
-                    templateUrl: 'views/partials/footer.html'
-                },
                 'left@index': {
                     templateUrl: 'views/partials/left.html'
                 },
