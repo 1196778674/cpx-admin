@@ -12,6 +12,10 @@ npm install generator-angular
 ##构建angular文件目录
 yo angular
 
+##如已安装yoman、grunt、bower
+直接 npm install
+
+
 根据提示安装即可
 
 单独安装ui-router
