@@ -1,12 +1,25 @@
-# cpx-admin
+##安装环境
+sudo install -g yo
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+sudo install -g grunt-cli
 
-## Build & development
+sudo install -g grunt
 
-Run `grunt` for building and `grunt serve` for preview.
+sudo install -g bower
 
-## Testing
+npm install generator-angular
 
-Running `grunt test` will run the unit tests with karma.
+##构建angular文件目录
+yo angular
+
+根据提示安装即可
+
+单独安装ui-router
+
+bower install ui-router
+
+##启动服务
+grunt serve
+
+##文件压缩混淆
+grunt build
