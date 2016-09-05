@@ -220,7 +220,7 @@ module.exports = function (grunt) {
             }
           }
       }
-    }, 
+    },
 
     // Renames files for browser caching purposes
     filerev: {
@@ -340,7 +340,7 @@ module.exports = function (grunt) {
         options: {
           module: 'cpxAdminApp',
           htmlmin: '<%= htmlmin.dist.options %>',
-          usemin: 'scripts/scripts.js'
+          usemin: 'scripts/cpx.min.js'
         },
         cwd: '<%= yeoman.app %>',
         src: 'views/{,*/}*.html',
