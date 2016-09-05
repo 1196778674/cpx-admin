@@ -27,11 +27,27 @@
   position: relative;
 }
 .cpx-left {
-  width: 50px;
+  width: 80px;
   position: absolute;
   left: 0;
   top: 0;
 }
+.cpx-left .cpx-left-nav {
+  width: 100%;
+  background: #314055;
+}
+.cpx-left .cpx-left-nav ul {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.cpx-left .cpx-left-nav ul li {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cpx-left .cpx-left-nav ul li a {
+  color: #fff;
+}
 .cpx-right {
-  margin-left: 40px;
+  margin-left: 80px;
+  padding-left: 20px;
 }
