@@ -38,6 +38,7 @@
 }
 .cpx-left .cpx-left-nav ul {
   height: 100%;
+  padding-top: 50px;
 }
 .cpx-left .cpx-left-nav ul li {
   text-align: center;
