@@ -25,20 +25,19 @@
 .cpx-main {
   width: 100%;
   position: relative;
+  height: 100%;
 }
 .cpx-left {
   width: 80px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  float: left;
 }
 .cpx-left .cpx-left-nav {
   width: 100%;
   background: #314055;
+  height: 100%;
 }
 .cpx-left .cpx-left-nav ul {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  height: 100%;
 }
 .cpx-left .cpx-left-nav ul li {
   text-align: center;
@@ -47,7 +46,10 @@
 .cpx-left .cpx-left-nav ul li a {
   color: #fff;
 }
+.cpx-left .cpx-left-nav ul li a.active {
+  background: red;
+}
 .cpx-right {
-  margin-left: 80px;
+  float: left;
   padding-left: 20px;
 }
