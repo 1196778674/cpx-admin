@@ -14,9 +14,12 @@ window.routerApp.factory('httpServer', ['$http',function ($http) {
 
 
 window.routerApp.controller('indexCtrl', ['$scope','$http','httpServer', function ($scope,$http,httpServer) {
-	$scope.dateTime = '2016-9-5';
+	$scope.startTime = new Date();
+	$scope.endTime = new Date();
 	$scope.show = function(){
 		$scope.dateTime = new Date();
 	}
+
 	httpServer.getDataList('json/index.json',$scope);
+
 }])

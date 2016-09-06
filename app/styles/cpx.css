@@ -71,6 +71,31 @@ a {
 }
 .baseData {
   width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+.baseData h3 {
+  display: inline-block;
+}
+.baseData .baseTime {
+  margin-bottom: 20px;
+}
+.baseData .baseTime input {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.baseData .baseTime span {
+  margin: 0 5px;
+  color: #888;
+}
+.baseData .baseTime span.time {
+  margin-left: 50px;
+  color: #555;
 }
 .baseData .baseDataList {
   width: 100%;

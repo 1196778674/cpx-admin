@@ -1,7 +1,12 @@
 <div ng-controller="indexCtrl">
 	<div class="baseData container">
-		基础数据
-		{{ dateTime }}
+		<div class="baseTime">
+			<h3>基础数据</h3>
+			<span class="time">时间</span>
+			<start></start>
+			<span>至</span>
+			<end></end>
+		</div>
 		<div class="baseDataList">
 			<ul>
 				<li ng-repeat="item in dataList">
