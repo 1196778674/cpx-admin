@@ -1,8 +1,8 @@
 <div class="cpx-left-nav" ng-style="{height:height}" leftheight>
-	<ul>
-		<li><a ui-sref="index" title="首页" active>首页</a></li>
-		<li><a ui-sref="index.storemanagement" title="门店管理" active>门店管理</a></li>
-		<li><a ui-sref="index.contractedstores" title="签约门店" active>签约门店</a></li>
-		<li><a ui-sref="index.datastatistics" title="数据统计" active>数据统计</a></li>
+	<ul ng-controller="leftNavCtrl">
+		<li><a ui-sref="index" title="首页" ng-class="{true:'active',false:''}[isActive0]" isactive>首页</a></li>
+		<li><a ui-sref="index.storemanagement" ng-class="{true:'active',false:''}[isActive1]" title="门店管理" isactive>门店管理</a></li>
+		<li><a ui-sref="index.contractedstores" ng-class="{true:'active',false:''}[isActive2]" title="签约门店" isactive>签约门店</a></li>
+		<li><a ui-sref="index.datastatistics" ng-class="{true:'active',false:''}[isActive3]" title="数据统计" isactive>数据统计</a></li>
 	</ul>
 </div>
