@@ -11,6 +11,16 @@ window.routerApp.directive('leftheight', [function () {
 	};
 }])
 
+window.routerApp.directive('width', [function () {
+	return {
+		restrict: 'A',
+		link: function (scope, iElement, iAttrs) {
+			var width = $(window).width();
+			scope.width = width - 80;
+		}
+	};
+}])
+
 window.routerApp.factory('urlType', [function () {
 	var urlType = function(hash,scope){
 		switch(hash) {

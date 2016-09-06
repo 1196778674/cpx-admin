@@ -1,8 +1,11 @@
-*{
+*,div,ul,ol,li,p,h1,h2,h3,h4,h5,h6,img,a{
 	margin: 0;
 	padding: 0;
 	outline: 0;
 	border: 0;
+	outline: 0;
+	text-decoration: none;
+	list-style: none;
 }
 .browsehappy{
 	height: 40px;
@@ -58,5 +61,35 @@
 }
 .cpx-right{
 	float: left;
-	padding-left: 20px;
+	padding: 0px 20px;
+}
+
+// 基础数据
+.baseData{
+	width: 100%;
+	.baseDataList{
+		width: 100%;
+		overflow: hidden;
+		ul{
+			overflow: hidden;
+			padding: 30px;
+			background: #F3F1F1;
+			li{
+				float: left;
+				width: 20%;
+				text-align: center;
+				color: #444;
+				border-left: 1px solid #ccc;
+				&:nth-child(1){
+					border-left: none;
+				}
+				span{
+					display: block;
+					margin-bottom: 10px;
+					color: #3d9ad1;
+					font-size: 16px;
+				}
+			}
+		}
+	}
 }

@@ -1,9 +1,8 @@
 <div ng-controller="indexCtrl">
-	<div class="baseData">
+	<div class="baseData container">
 		基础数据
 		{{ dateTime }}
-		<button type="button" class="btn btn-default" ng-click="show()">Go!</button>
-		<div>
+		<div class="baseDataList">
 			<ul>
 				<li ng-repeat="item in dataList">
 					<span>{{ item.number }}</span>
