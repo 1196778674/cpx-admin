@@ -1,3 +1,23 @@
-<div>
-index
+<div ng-controller="indexCtrl">
+	<div class="baseData">
+		基础数据
+		{{ dateTime }}
+		<button type="button" class="btn btn-default" ng-click="show()">Go!</button>
+		<div>
+			<ul>
+				<li ng-repeat="item in dataList">
+					<span>{{ item.number }}</span>
+					{{ item.type }}
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="todayNumber">
+		今日统计
+	</div>
+
+	<div class="liveNumber">
+		活跃用户
+	</div>
 </div>
