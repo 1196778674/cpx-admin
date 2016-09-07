@@ -16,26 +16,27 @@ window.routerApp.directive('datepicker', [function () {
 	return {
 		restrict: 'A',
 		link: function (scope, iElement, iAttrs) {
-			scope.startTime = new Date();
-			scope.endTime = new Date();
 			$("." + iAttrs.class).datetimepicker({
 		        format: "yyyy-mm-dd",
 		        autoclose: true,
 		        todayBtn: true,
 		        clearBtn: true,
 		        todayHighlight: true,
-		        startDate: scope.startTime,
+		        minView: "month",
+		        // startDate: scope.startTime,
 		        minuteStep: 10
-		    }).on('changeDate',function(e){
-		    	console.log(e);
-		    });
+		    })
 		}
 	};
 }])
 
 window.routerApp.controller('indexCtrl', ['$scope','$http','httpServer', function ($scope,$http,httpServer) {
-	$scope.show = function(){
-		$scope.dateTime = new Date();
+	$scope.search = function(){
+		$scope.params = {
+			start: $scope.startTime,
+			end: $scope.endTime
+		}
+		console.log($scope.params);
 	}
 
 	httpServer.getDataList('json/index.json',$scope);
