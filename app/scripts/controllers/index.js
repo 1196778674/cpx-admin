@@ -22,6 +22,7 @@ window.routerApp.directive('datepicker', [function () {
 		        format: "yyyy-mm-dd",
 		        autoclose: true,
 		        todayBtn: true,
+		        clearBtn: true,
 		        todayHighlight: true,
 		        startDate: scope.startTime,
 		        minuteStep: 10
