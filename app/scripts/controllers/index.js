@@ -17,13 +17,17 @@ window.routerApp.directive('datepicker', [function () {
 		restrict: 'A',
 		link: function (scope, iElement, iAttrs) {
 			scope.startTime = new Date();
+			scope.endTime = new Date();
 			$("." + iAttrs.class).datetimepicker({
-	        format: "yyyy-mm-dd",
-	        autoclose: true,
-	        todayBtn: true,
-	        startDate: scope.startTime,
-	        minuteStep: 10
-	    });
+		        format: "yyyy-mm-dd",
+		        autoclose: true,
+		        todayBtn: true,
+		        todayHighlight: true,
+		        startDate: scope.startTime,
+		        minuteStep: 10
+		    }).on('changeDate',function(e){
+		    	console.log(e);
+		    });
 		}
 	};
 }])
