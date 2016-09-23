@@ -2,7 +2,7 @@
 /.tmp
 /.sass-cache
 /bower_components
-/test
+/dist
 /.bowerrc
 /.editorconfig
 /.gitattributes
