@@ -10,7 +10,7 @@ sudo install -g bower
 npm install generator-angular
 
 ##构建angular文件目录
-yo angular
+yo angular-require
 
 根据提示安装即可
 
