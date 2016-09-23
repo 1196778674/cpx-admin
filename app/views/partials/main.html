@@ -1,0 +1,70 @@
+<div class="index-container" ng-controller="IndexCtrl">
+	<div class="well">
+		<h4>
+			基础数据
+			<div class="base-datepickers" ng-controller="datepickerCtrl">
+				<label for="">时间</label>
+				<input date-range-picker readonly="readonly" type="text" ng-model="datePicker" />
+			</div>
+		</h4>
+		<div class="data-list">
+			<div class="col-md" ng-repeat="(key,value) in welcomeText">
+				<p class="text-number">{{value.number}}</p>
+				<p>{{value.type}}</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="well">
+		<h4>今日统计</h4>
+		<div class="today-statistics">
+			<div class="col-md-statistics">
+				<div class="media">
+					<img class="pull-left media-object" src="#" alt="Image">
+					<div class="media-body">
+						<h4 class="media-heading">新增注册用户</h4>
+						<p>今日:30</p>
+						<p>昨日:40</p>
+					</div>
+					<div class="up-down-style">
+						12%
+					</div>
+				</div>
+			</div>
+			<div class="col-md-statistics">
+				<div class="media">
+					<img class="pull-left media-object" src="#" alt="Image">
+					<div class="media-body">
+						<h4 class="media-heading">新增注册用户</h4>
+						<p>今日:30</p>
+						<p>昨日:40</p>
+					</div>
+					<div class="up-down-style">
+						12%
+					</div>
+				</div>
+			</div>
+			<div class="col-md-statistics">
+				<div class="media">
+					<img class="pull-left media-object" src="#" alt="Image">
+					<div class="media-body">
+						<h4 class="media-heading">新增注册用户</h4>
+						<p>今日:30</p>
+						<p>昨日:40</p>
+					</div>
+					<div class="up-down-style">
+						12%
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="well">
+		<h4>活跃用户</h4>
+	</div>
+</div>
+
+<script type="text/template" id="J_user_list">
+	${user}
+</script>
